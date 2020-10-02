@@ -1,0 +1,85 @@
+    @import "https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap";
+    * {
+        margin: 0;
+        border: 0;
+        padding: 0;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    header {
+        padding-bottom: 36px;
+        padding-top: 10px;
+    }
+    
+    body {
+        margin-left: 165px;
+    }
+    
+    .foodfyMenu a+a {
+        margin-left: 122px;
+        text-decoration: none;
+        color: black;
+    }
+    
+    .foodfyMenu a+a+a {
+        margin-left: 30px;
+    }
+    
+    .foodfyBanner {
+        width: 940px;
+        height: 366px;
+        background-color: #FBDFDB;
+        position: relative;
+        border-radius: 30px;
+    }
+    
+    .bannerTexts {
+        position: absolute;
+        top: 117px;
+        left: 60px;
+    }
+    
+    .bannerTexts p {
+        opacity: 0.7;
+        color: #000000;
+    }
+    
+    .bannerChef img {
+        position: absolute;
+        top: 66px;
+        right: 100px;
+    }
+    /* CARDS das receitas */
+    
+    .cardsTitle {
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+    
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 940px;
+        gap: 20px;
+    }
+    
+    .card {
+        max-width: 300px;
+        margin-bottom: 30px;
+    }
+    
+    .cardImageContainer img {
+        width: 100%;
+        border-radius: 15px;
+    }
+    
+    .cardDishTitle {
+        margin-top: 20px;
+        font-size: 18px;
+    }
+    
+    .cardDishCook {
+        margin-top: 5px;
+        font-size: 14px;
+        color: #777777;
+    }
