@@ -12,8 +12,22 @@
     }
     
     body {
-        margin-left: 165px;
+        margin-left: 25vh;
         font-family: 'Roboto', sans-serif;
+    }
+    
+    footer {
+        background-color: #EEEEEE;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        height: 62px;
+        text-align: center;
+    }
+    
+    footer p {
+        margin-top: 23px;
+        color: #999999;
     }
     
     .foodfyMenu a+a {
@@ -101,7 +115,7 @@
         max-width: 660px;
         height: 413px;
         background: white;
-        margin: 30vh auto;
+        margin: 20vh auto;
         position: relative;
         border-radius: 16px;
     }
@@ -144,4 +158,20 @@
     .modalContent p {
         font-size: 18px;
         color: #777777;
+    }
+    
+    .titles {
+        font-family: Roboto-Bold, sans-serif;
+        font-size: 10px;
+        color: #111111;
+        margin-bottom: 20px;
+    }
+    
+    .paragraphs {
+        font-family: Roboto-Regular, sans-serif;
+        font-size: 18px;
+        color: #444444;
+        line-height: 28px;
+        padding-bottom: 30px;
+        width: 940px;
     }
