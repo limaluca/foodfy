@@ -16,6 +16,7 @@ for (let card of cards) {
         modalOverlay.querySelector('img').src = `/layouts/assets/${dishImageId}`
         modalOverlay.querySelector('h4').innerHTML = `${dishName}`;
         modalOverlay.querySelector('p').innerHTML = `${dishAuthor}`;
+
     })
 }
 
