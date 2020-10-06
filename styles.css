@@ -13,6 +13,7 @@
     
     body {
         margin-left: 165px;
+        font-family: 'Roboto', sans-serif;
     }
     
     .foodfyMenu a+a {
@@ -76,10 +77,72 @@
     .cardDishTitle {
         margin-top: 20px;
         font-size: 18px;
+        font-weight:
     }
     
     .cardDishCook {
         margin-top: 5px;
         font-size: 14px;
+        color: #777777;
+    }
+    /* Modal Overlay */
+    
+    .modalOverlay {
+        background-color: rgba(0, 0, 0, 0.7);
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        visibility: hidden;
+    }
+    
+    .modal {
+        max-width: 660px;
+        height: 413px;
+        background: white;
+        margin: 30vh auto;
+        position: relative;
+        border-radius: 16px;
+    }
+    
+    .closeModal {
+        position: absolute;
+        bottom: 30px;
+        left: 43%;
+        color: #999999;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    /* Modal Overlay Active */
+    
+    .modalOverlay.active {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .modalContent {
+        text-align: center;
+        line-height: 28px;
+    }
+    
+    .modalImage {
+        padding: 30px 30px 20px 30px;
+    }
+    
+    .modalContent img {
+        border-radius: 15px;
+        width: 600px;
+        height: 200px;
+    }
+    
+    .modalContent h4 {
+        font-size: 24px;
+        color: #111111;
+    }
+    
+    .modalContent p {
+        font-size: 18px;
         color: #777777;
     }
