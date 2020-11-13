@@ -1,20 +1,28 @@
 {
-  "name": "Foodfy",
-  "version": "1.0.0",
-  "description": "<h1 align=\"center\">     <img alt=\"Launchbase\" src=\"https://storage.googleapis.com/golden-wind/bootcamp-launchbase/logo.png\" width=\"400px\" /> </h1>",
-  "main": "scripts.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/limaluca/foodfy.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/limaluca/foodfy/issues"
-  },
-  "homepage": "https://github.com/limaluca/foodfy#readme"
+    "name": "Foodfy",
+    "version": "1.0.0",
+    "description": "<h1 align=\"center\">     <img alt=\"Launchbase\" src=\"https://storage.googleapis.com/golden-wind/bootcamp-launchbase/logo.png\" width=\"400px\" /> </h1>",
+    "main": "scripts.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "nodemon server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/limaluca/foodfy.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/limaluca/foodfy/issues"
+    },
+    "homepage": "https://github.com/limaluca/foodfy#readme",
+    "dependencies": {
+        "express": "^4.17.1",
+        "nunjucks": "^3.2.2"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.6"
+    }
 }
