@@ -1,24 +1,12 @@
-<!DOCTYPE html>
-<html>
+{%extends 'layout.njk'%}
 
-<head>
-    <header>
-        <link rel="stylesheet" href="/styles.css">
+{%block head%}
 
+<title>Inicio</title>
 
-        <div class="foodfyMenu">
-            <a href="">
-                <img src="/layouts/assets/logo.png" alt="foodfyLogo">
-            </a>
+{%endblock%}
 
-            <a href="about.njk" class="navigationMenu">About us</a>
-            <a href="recepies.njk" class="navigationMenu">Receitas</a>
-
-        </div>
-
-
-    </header>
-</head>
+{%block content%}
 
 <body>
     <div class="foodfyBanner">
@@ -44,79 +32,19 @@
     </div>
 
     <section class="cards">
-
-        <div class="card" id="burger.png">
+        {% for item in items %}
+        <div class="card" id={{item.id}}>
             <div class="cardImageContainer">
-                <img src="/layouts/assets/burger.png" alt="">
+                <img src={{item.image}} alt="Fotinho da comida">
             </div>
             <div class="cardDishTitle">
-                <h4>Triplo Bacon Burger</h4>
+                <h4>{{item.title}}</h4>
             </div>
             <div class="cardDishCook">
-                <p>por Jorge Relato</p>
+                <p>{{item.author}}</p>
             </div>
         </div>
-
-        <div class="card" id="pizza.png">
-            <div class="cardImageContainer">
-                <img src="/layouts/assets/pizza.png" alt="">
-            </div>
-            <div class="cardDishTitle">
-                <h4>Pizza 4 estações</h4>
-            </div>
-            <div class="cardDishCook">
-                <p>por Fabiana Melo</p>
-            </div>
-        </div>
-
-        <div class="card" id="espaguete.png">
-            <div class="cardImageContainer">
-                <img src="/layouts/assets/espaguete.png" alt="">
-            </div>
-            <div class="cardDishTitle">
-                <h4>Espaguete ao alho</h4>
-            </div>
-            <div class="cardDishCook">
-                <p>por Julia Kioto</p>
-            </div>
-        </div>
-
-        <div class="card" id="lasanha.png">
-            <div class="cardImageContainer">
-                <img src="/layouts/assets/lasanha.png" alt="">
-            </div>
-            <div class="cardDishTitle">
-                <h4>Lasanha mac n’ cheese</h4>
-            </div>
-            <div class="cardDishCook">
-                <p>por Juliano Vieira</p>
-            </div>
-        </div>
-
-        <div class="card" id="doce.png">
-            <div class="cardImageContainer">
-                <img src="/layouts/assets/doce.png" alt="">
-            </div>
-            <div class="cardDishTitle">
-                <h4>Docinhos pão-do-céu</h4>
-            </div>
-            <div class="cardDishCook">
-                <p>por Ricardo Golvea</p>
-            </div>
-        </div>
-
-        <div class="card" id="asinhas.png">
-            <div class="cardImageContainer">
-                <img src="/layouts/assets/asinhas.png" alt="">
-            </div>
-            <div class="cardDishTitle">
-                <h4>Asinhas de frango ao barbecue</h4>
-            </div>
-            <div class="cardDishCook">
-                <p>por Vania Steroski</p>
-            </div>
-        </div>
-
+        {% endfor %}
     </section>
 
     <div class="modalOverlay">
@@ -151,4 +79,4 @@
 </body>
 
 
-</html>
+{%endblock%}

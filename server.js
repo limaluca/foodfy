@@ -3,6 +3,8 @@ const express = require('express');
 const nunjucks = require('nunjucks');
 const server = express();
 
+const foodfyRecipies = require('./data')
+
 server.set('view engine', '.njk');
 
 server.use(express.static('public'));
@@ -22,7 +24,7 @@ server.get("/", function(request, response) {
 })
 
 server.get("/index", function(request, response) {
-    return response.render("index")
+    return response.render("index", { items: foodfyRecipies })
 })
 
 
