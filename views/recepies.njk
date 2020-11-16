@@ -1,161 +1,23 @@
 {%extends 'layout.njk'%}
 {%block content%}
-<body>
     <div class="wrapper">
         <section class="cards">
-
-            <div class="card" id="burger.png">
+            {%for item in items%}
+            <div class="card" id="{{item.id}}">
                 <div class="cardImageContainer">
-                    <img src="/layouts/assets/burger.png" alt="">
+                    <img src={{item.image}} alt="">
                 </div>
                 <div class="cardDishTitle">
-                    <h4>Triplo Bacon Burger</h4>
+                    <h4>{{item.title}}</h4>
                 </div>
                 <div class="cardDishCook">
-                    <p>por Jorge Relato</p>w
+                    <p>{{item.author}}</p>
                 </div>
             </div>
-
-            <div class="card" id="pizza.png">
-                <div class="cardImageContainer">
-                    <img src="/layouts/assets/pizza.png" alt="">
-                </div>
-                <div class="cardDishTitle">
-                    <h4>Pizza 4 estações</h4>
-                </div>
-                <div class="cardDishCook">
-                    <p>por Fabiana Melo</p>
-                </div>
-            </div>
-
-            <div class="card" id="espaguete.png">
-                <div class="cardImageContainer">
-                    <img src="/layouts/assets/espaguete.png" alt="">
-                </div>
-                <div class="cardDishTitle">
-                    <h4>Espaguete ao alho</h4>
-                </div>
-                <div class="cardDishCook">
-                    <p>por Julia Kioto</p>
-                </div>
-            </div>
-
-            <div class="card" id="lasanha.png">
-                <div class="cardImageContainer">
-                    <img src="/layouts/assets/lasanha.png" alt="">
-                </div>
-                <div class="cardDishTitle">
-                    <h4>Lasanha mac n’ cheese</h4>
-                </div>
-                <div class="cardDishCook">
-                    <p>por Juliano Vieira</p>
-                </div>
-            </div>
-
-            <div class="card" id="doce.png">
-                <div class="cardImageContainer">
-                    <img src="/layouts/assets/doce.png" alt="">
-                </div>
-                <div class="cardDishTitle">
-                    <h4>Docinhos pão-do-céu</h4>
-                </div>
-                <div class="cardDishCook">
-                    <p>por Ricardo Golvea</p>
-                </div>
-            </div>
-
-            <div class="card" id="asinhas.png">
-                <div class="cardImageContainer">
-                    <img src="/layouts/assets/asinhas.png" alt="">
-                </div>
-                <div class="cardDishTitle">
-                    <h4>Asinhas de frango ao barbecue</h4>
-                </div>
-                <div class="cardDishCook">
-                    <p>por Vania Steroski</p>
-                </div>
-            </div>
-
-        </section>
-        <section class="cards">
-
-            <div class="card" id="burger.png">
-                <div class="cardImageContainer">
-                    <img src="/layouts/assets/burger.png" alt="">
-                </div>
-                <div class="cardDishTitle">
-                    <h4>Triplo Bacon Burger</h4>
-                </div>
-                <div class="cardDishCook">
-                    <p>por Jorge Relato</p>
-                </div>
-            </div>
-
-            <div class="card" id="pizza.png">
-                <div class="cardImageContainer">
-                    <img src="/layouts/assets/pizza.png" alt="">
-                </div>
-                <div class="cardDishTitle">
-                    <h4>Pizza 4 estações</h4>
-                </div>
-                <div class="cardDishCook">
-                    <p>por Fabiana Melo</p>
-                </div>
-            </div>
-
-            <div class="card" id="espaguete.png">
-                <div class="cardImageContainer">
-                    <img src="/layouts/assets/espaguete.png" alt="">
-                </div>
-                <div class="cardDishTitle">
-                    <h4>Espaguete ao alho</h4>
-                </div>
-                <div class="cardDishCook">
-                    <p>por Julia Kioto</p>
-                </div>
-            </div>
-
-            <div class="card" id="lasanha.png">
-                <div class="cardImageContainer">
-                    <img src="/layouts/assets/lasanha.png" alt="">
-                </div>
-                <div class="cardDishTitle">
-                    <h4>Lasanha mac n’ cheese</h4>
-                </div>
-                <div class="cardDishCook">
-                    <p>por Juliano Vieira</p>
-                </div>
-            </div>
-
-            <div class="card" id="doce.png">
-                <div class="cardImageContainer">
-                    <img src="/layouts/assets/doce.png" alt="">
-                </div>
-                <div class="cardDishTitle">
-                    <h4>Docinhos pão-do-céu</h4>
-                </div>
-                <div class="cardDishCook">
-                    <p>por Ricardo Golvea</p>
-                </div>
-            </div>
-
-            <div class="card" id="asinhas.png">
-                <div class="cardImageContainer">
-                    <img src="/layouts/assets/asinhas.png" alt="">
-                </div>
-                <div class="cardDishTitle">
-                    <h4>Asinhas de frango ao barbecue</h4>
-                </div>
-                <div class="cardDishCook">
-                    <p>por Vania Steroski</p>
-                </div>
-            </div>
+            {%endfor%}
 
         </section>
     </div>
-
-
-</body>
 
 {%endblock%}
 

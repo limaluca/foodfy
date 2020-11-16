@@ -36,34 +36,19 @@ server.get("/about", function(request, response) {
 
 
 server.get("/recepies", function(request, response) {
-    return response.render("recepies")
+
+    return response.render("recepies", { items: foodfyRecipies })
 })
 
-// server.get("/recipe", function(request, response) {
-//     const id = request.query.id;
-//     console.log(id);
+server.get("/recipe", function(request, response) {
+    const id = request.query.id
 
-//     const recipe = foodfyRecipies.find(function(recipe) {
-//         return recipe.id == id
-
-//     })
-//     if (!recipe) {
-//         return response.send("recipe not found!")
-//     }
-
-//     return response.send("hmyes")
-
-
-// })
-
-server.get("/recepies/:index", function(request, response) {
-    const recipes = foodfyRecipies // Array de receitas carregadas do data.js
-    const recipeIndex = request.params.index;
-
-    if (recipeIndex === undefined) {
-        console.log("n exite")
+    const recipe = foodfyRecipies.find(function(recipe) {
+        return recipe.id == id;
+    })
+    if (!recipe) {
+        return response.send("Recipe not found!")
     }
-
-    console.log(recipes[recipeIndex]);
+    return response.render("recipe", { item: recipe })
 
 })

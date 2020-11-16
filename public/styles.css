@@ -9,25 +9,11 @@
     header {
         padding-bottom: 36px;
         padding-top: 10px;
+        margin-left: 25vh;
     }
     
     body {
-        margin-left: 25vh;
         font-family: 'Roboto', sans-serif;
-    }
-    
-    footer {
-        background-color: #EEEEEE;
-        width: 100%;
-        position: absolute;
-        left: 0;
-        height: 62px;
-        text-align: center;
-    }
-    
-    footer p {
-        margin-top: 23px;
-        color: #999999;
     }
     
     .foodfyMenu a+a {
@@ -176,4 +162,21 @@
         line-height: 28px;
         padding-bottom: 30px;
         width: 940px;
+    }
+    
+    .wrapped {
+        margin-left: 25vh;
+    }
+    
+    footer {
+        background-color: #EEEEEE;
+        width: 100%;
+        height: 62px;
+        bottom: 0;
+    }
+    
+    footer p {
+        margin-top: 23px;
+        text-align: center;
+        color: #999999;
     }
