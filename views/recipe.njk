@@ -4,9 +4,83 @@
 {%block content%}
 
 
-    <div class="cardsTitle">
-        <h1>{{item.title}}</h1>
+    <div class="recipe-details">
+        
+        <div class="recipe-presentation">
+            <img id="image" src="{{item.image}}" alt="imagem de {{item.title}}">
+            <h1>{{item.title}}</h1>
+            <p>{{item.author}}</p>
+        </div>
     </div>
+
+    <div class="container">
+        
+        <div class="recipe__ingredients">
+            <h2>
+                Ingredientes<button class="button">MOSTRAR</button>
+            </h2>
+            <div class="recipe__info hide">
+                <ul>
+                    
+                        <li>1 xícara (chá) de leite</li>
+                    
+                        <li>1 ovo</li>
+                    
+                        <li>1 colher (chá) de sal</li>
+                    
+                        <li>1 colher (chá) de açúcar</li>
+                    
+                        <li>1 colher (sopa) de margarina</li>
+                    
+                        <li>1 e 1/2 xícara (chá) de farinha de trigo</li>
+                    
+                        <li>1 colher (sobremesa) de fermento em pó</li>
+                    
+                        <li>1/2 lata de molho de tomate</li>
+                    
+                        <li>250 g de mussarela ralada grossa</li>
+                    
+                        <li>2 tomates fatiados</li>
+                    
+                        <li>azeitona picada</li>
+                    
+                        <li>orégano a gosto</li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="recipe__preparation">
+            <h2>
+                Modo de preparo<button class="button">MOSTRAR</button>
+            </h2>
+            <div class="recipe__info hide">
+                <ol>
+                    
+                        <li>No liquidificador bata o leite, o ovo, o sal, o açúcar, a margarina, a farinha de trigo e o fermento em pó até que tudo esteja encorporado.</li>
+                    
+                        <li>Despeje a massa em uma assadeira para pizza untada com margarina e leve ao forno preaquecido por 20 minutos.</li>
+                    
+                        <li>Retire do forno e despeje o molho de tomate.</li>
+                    
+                        <li>Cubra a massa com mussarela ralada, tomate e orégano a gosto.</li>
+                    
+                        <li>Leve novamente ao forno até derreter a mussarela.</li>
+                    
+                </ol>
+            </div>
+        </div>
+        <div class="recipe__add">
+            <h2>
+                Informações adicionais<button class="button">Mostrar</button>
+            </h2>
+            <div class="recipe__info hide">
+                <p>Pizza de liquidificador é uma receita deliciosa e supersimples de preparar. Feita toda no liquidificador, ela é bem prática para o dia a dia. Aqui no TudoGostoso você também encontra diversas delícias práticas feitas no liquidificador: massa de panqueca, torta de frango de liquidificador, pão de queijo de liquidificador, bolo de banana, bolo de chocolate e muito mais!</p>
+            </div>
+        </div>
+
+    </div>
+
+
 
 
 

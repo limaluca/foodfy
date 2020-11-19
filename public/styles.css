@@ -180,3 +180,42 @@
         text-align: center;
         color: #999999;
     }
+    
+    .recipe__detail h2 {
+        margin-top: 50px;
+        margin-bottom: 20px;
+        font-size: 24px;
+        color: #111;
+    }
+    
+    .recipe__ingredients,
+    .recipe__preparation,
+    .recipe__info {
+        font-size: 18px;
+        color: #444;
+        line-height: 28px;
+    }
+    
+    .hide {
+        display: none;
+    }
+    
+    li,
+    ol {
+        list-style-position: inside;
+    }
+    
+    .button {
+        padding-left: 8px;
+        background: transparent;
+        font-family: 'Roboto', sans-serif;
+        font-size: 12px;
+        font-weight: bold;
+        border: none;
+        color: #999999;
+        text-transform: uppercase;
+    }
+    
+    .button:hover {
+        cursor: pointer;
+    }
