@@ -21,8 +21,8 @@
             </h2>
             <div class="recipe__info hide">
                 <ul>
-                        {% for ingredient in recipe.ingredients %}
-                            <li>1 xícara (chá) de leite</li>     
+                        {% for ingredient in item.ingredients %}
+                            <li>{{ ingredient }}</li>     
                         {% endfor %}
                     
                 </ul>
@@ -34,16 +34,9 @@
             </h2>
             <div class="recipe__info hide">
                 <ol>
-                    
-                        <li>No liquidificador bata o leite, o ovo, o sal, o açúcar, a margarina, a farinha de trigo e o fermento em pó até que tudo esteja encorporado.</li>
-                    
-                        <li>Despeje a massa em uma assadeira para pizza untada com margarina e leve ao forno preaquecido por 20 minutos.</li>
-                    
-                        <li>Retire do forno e despeje o molho de tomate.</li>
-                    
-                        <li>Cubra a massa com mussarela ralada, tomate e orégano a gosto.</li>
-                    
-                        <li>Leve novamente ao forno até derreter a mussarela.</li>
+                        {% for prep in item.preparation %}
+                            <li>{{ prep }}</li>
+                        {% endfor %}
                     
                 </ol>
             </div>
@@ -53,7 +46,7 @@
                 Informações adicionais<button class="button">Mostrar</button>
             </h2>
             <div class="recipe__info hide">
-                <p>Pizza de liquidificador é uma receita deliciosa e supersimples de preparar. Feita toda no liquidificador, ela é bem prática para o dia a dia. Aqui no TudoGostoso você também encontra diversas delícias práticas feitas no liquidificador: massa de panqueca, torta de frango de liquidificador, pão de queijo de liquidificador, bolo de banana, bolo de chocolate e muito mais!</p>
+                <p>{{ item.information }}</p>
             </div>
         </div>
 
