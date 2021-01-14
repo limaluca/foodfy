@@ -2,10 +2,11 @@
     "name": "Foodfy",
     "version": "1.0.0",
     "description": "<h1 align=\"center\">     <img alt=\"Launchbase\" src=\"https://storage.googleapis.com/golden-wind/bootcamp-launchbase/logo.png\" width=\"400px\" /> </h1>",
-    "main": "scripts.js",
+    "main": "server.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "nodemon server.js"
+        "start": "npm-run-all -p nodemon browsersync",
+        "nodemon": "nodemon server.js",
+        "browsersync": "browser-sync start --proxy http://localhost:5000 --files 'public, views'"
     },
     "repository": {
         "type": "git",
@@ -19,8 +20,10 @@
     },
     "homepage": "https://github.com/limaluca/foodfy#readme",
     "dependencies": {
+        "browser-sync": "^2.26.13",
         "express": "^4.17.1",
-        "nunjucks": "^3.2.2"
+        "nunjucks": "^3.2.2",
+        "run-all": "^1.0.1"
     },
     "devDependencies": {
         "nodemon": "^2.0.6"

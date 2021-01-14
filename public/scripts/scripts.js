@@ -17,27 +17,6 @@ for (let card of cards) {
     })
 }
 
-// for (let card of cards) {
-//     card.addEventListener('click', function() {
-//         modalOverlay.classList.add('active');
-
-
-//         //   Getting the contents on the selectors of each card
-//         const recipeImageId = card.getAttribute('id');
-//         const recipeName = card.querySelector('h4').innerHTML;
-//         const recipeAuthor = card.querySelector('p').innerHTML;
-
-
-//         //   Replacing the content for the selected card 
-//         modalOverlay.querySelector('img').src = `/layouts/assets/${recipeImageId}`
-//         modalOverlay.querySelector('h4').innerHTML = `${recipeName}`;
-//         modalOverlay.querySelector('p').innerHTML = `${recipeAuthor}`;
-
-//     })
-// }
-
-
-
 
 const buttons = document.querySelectorAll('.button')
 const infos = document.querySelectorAll('.recipe__info')
@@ -61,3 +40,23 @@ for (const button in buttons) {
         }
     })
 }
+
+
+// for (let card of cards) {
+//     card.addEventListener('click', function() {
+//         modalOverlay.classList.add('active');
+
+
+//         //   Getting the contents on the selectors of each card
+//         const recipeImageId = card.getAttribute('id');
+//         const recipeName = card.querySelector('h4').innerHTML;
+//         const recipeAuthor = card.querySelector('p').innerHTML;
+
+
+//         //   Replacing the content for the selected card 
+//         modalOverlay.querySelector('img').src = `/layouts/assets/${recipeImageId}`
+//         modalOverlay.querySelector('h4').innerHTML = `${recipeName}`;
+//         modalOverlay.querySelector('p').innerHTML = `${recipeAuthor}`;
+
+//     })
+// }

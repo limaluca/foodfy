@@ -9,7 +9,11 @@
     header {
         padding-bottom: 36px;
         padding-top: 10px;
-        margin-left: 25vh;
+    }
+    
+    header {
+        padding-left: 25vh;
+        display: inline-block
     }
     
     body {
@@ -24,6 +28,16 @@
     
     .foodfyMenu a+a+a {
         margin-left: 30px;
+    }
+    
+    .foodfyMenu-Admin {
+        background-color: black;
+        color: white;
+        width: 100%;
+    }
+    
+    .foodfyMenu-Admin a+a {
+        color: white;
     }
     
     .foodfyBanner {
@@ -218,4 +232,9 @@
     
     .button:hover {
         cursor: pointer;
+    }
+    /* FORM */
+    
+    .recipeForm {
+        margin-top: 20px;
     }
