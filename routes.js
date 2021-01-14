@@ -1,35 +1,30 @@
 const express = require('express')
 const routes = express.Router()
-const data = require('./data');
-
+const recipes = require("./recipes")
 
 
 
 routes.get("/", function(request, response) {
-    return response.render("index", { items: data })
+    return response.render("index", { items: data.recipes })
 })
 
-routes.get("/index", function(request, response) {
+routes.get("/index", recipes.index)
 
-    return response.render("index", { items: data })
+routes.get("/about", recipes.about)
 
-})
-
-routes.get("/about", function(request, response) {
-    return response.render("about")
-})
+routes.get("/recipes/create", recipes.create)
 
 routes.get("/recipes", function(request, response) {
 
 
-    return response.render("recipes", { items: data })
+    return response.render("recipes", { items: data.recipes })
 })
 
 routes.get("/recipe", function(request, response) {
 
     const id = request.query.id
 
-    const foundRecipe = data.find(function(recipe) {
+    const foundRecipe = data.recipes.find(function(recipe) {
         return id == recipe.id;
     })
 
