@@ -1,0 +1,61 @@
+{%extends 'layout.njk'%}
+
+
+{%block content%}
+
+    <a class="button" href="/recipes/{{recipe.id}}/edit">Editar</a>
+    <h3>Receita: {{recipe.title}}</h3>
+    <div class="recipe-details">
+
+        <div class="recipe-presentation">
+            <img id="image" src="{{recipe.image_url}}" alt="imagem de {{recipe.title}}">
+            <h1>{{recipe.title}}</h1>
+            <p>{{recipe.author}}</p>
+        </div>
+    </div>
+
+    <div class="container">
+        
+        <div class="recipe__ingredients">
+            <h2>
+                Ingredientes<button class="button">MOSTRAR</button>
+            </h2>
+            <div class="recipe__info hide">
+                <ul>
+                        {% for ingredient in recipe.ingredients %}
+                            <li>{{ ingredient }}</li>     
+                        {% endfor %}
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="recipe__preparation">
+            <h2>
+                Modo de preparo<button class="button">MOSTRAR</button>
+            </h2>
+            <div class="recipe__info hide">
+                <ol>
+                        {% for prep in recipe.preparations %}
+                            <li>{{ prep }}</li>
+                        {% endfor %}
+                    
+                </ol>
+            </div>
+        </div>
+        <div class="recipe__add">
+            <h2>
+                Informações adicionais<button class="button">Mostrar</button>
+            </h2>
+            <div class="recipe__info hide">
+                <p>{{ recipe.information }}</p>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+{%endblock%}

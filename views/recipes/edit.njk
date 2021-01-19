@@ -1,0 +1,34 @@
+{%extends 'layout.njk'%}
+
+
+{%block content%}
+
+    <h3>Receita: {{recipe.title}}</h3>
+
+    <img id="edit-image" src="{{recipe.image_url}}" alt="imagem de {{recipe.title}}">
+
+    <form method="POST" action="/recipes?_method=PUT" class="recipeForm">
+            {% include 'recipes/fields.njk'%}
+        <input 
+            type="hidden" 
+            name="id" 
+            value="{{recipe.id}}"
+        >
+    </form>
+
+    <form action="/recipes?_method=DELETE" method="POST" >
+        <input 
+            type="hidden" 
+            name="id" 
+            value="{{recipe.id}}"">
+        <button type="submit">Deletar</button>
+    </form>
+
+
+
+
+
+
+
+
+{%endblock%}

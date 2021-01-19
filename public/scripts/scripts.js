@@ -6,16 +6,16 @@ const hideButton = document.querySelectorAll('.hide-show')
 
 
 
-const cards = document.querySelectorAll('.card');
+// const cards = document.querySelectorAll('.card');
 
-for (let card of cards) {
-    card.addEventListener('click', function() {
-        const pageId = card.id
-        window.location.href = `/recipe?id=${pageId}`
+// for (let card of cards) {
+//     card.addEventListener('click', function() {
+//         const pageId = card.id
+//         window.location.href = `/recipes/${pageId}`
 
 
-    })
-}
+//     })
+// }
 
 
 const buttons = document.querySelectorAll('.button')

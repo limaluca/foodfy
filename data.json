@@ -1,15 +1,71 @@
 {
-    "recipes": [{
-        "id": 1,
-        "image": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/burger.png",
-        "title": "Lanche Teste",
-        "author": "Luka",
-        "ingredients": ["n sei que la",
-            "mais isso aqui",
-            "40g daquilo la"
-        ],
-        "preparation": ["Misture todos os ingredientes muito bem e amasse para que fique tudo muito bem misturado, Faça porções de 90 g a 100 g."],
-        "information": "Pizza de liquidificador é uma receita deliciosa e supersimples de preparar. Feita toda no liquidificador, ela é bem prática para o dia a dia. Aqui no TudoGostoso você também encontra diversas delícias práticas feitas no liquidificador: massa de panqueca, torta de frango de liquidificador, pão de queijo de liquidificador, bolo de banana, bolo de chocolate e muito mais!"
-
-    }]
+  "recipes": [
+    {
+      "id": 1,
+      "image_url": "https://conteudo.imguol.com.br/c/entretenimento/0e/2017/10/15/batata-crua-1508077604971_v2_1920x1269.jpg",
+      "title": "Barbara Chips",
+      "author": "Barbara",
+      "ingredients": [
+        "Batata",
+        "Ovo",
+        "Sal"
+      ],
+      "preparations": [
+        "Eetjioef",
+        "dsfsdfgsd",
+        "dsfsd"
+      ],
+      "information": "eh so isso"
+    },
+    {
+      "id": 2,
+      "image_url": "https://cdn.guiadacozinha.com.br/wp-content/uploads/2019/10/ab%C3%B3bora-refogada.jpg",
+      "title": "Abóbora Refogada",
+      "author": "Laís J.",
+      "ingredients": [
+        "Abóbora",
+        "Manteiga de garrafa",
+        "Orégano",
+        ""
+      ],
+      "preparations": [
+        "coloque a abobora na panela",
+        "cozinhe por 10 minutos",
+        "bote oregano",
+        "complete com manteiga"
+      ],
+      "information": "aproveite a comida"
+    },
+    {
+      "id": 3,
+      "image_url": "https://www.receitasagora.com.br/wp-content/uploads/2020/06/receita-de-strogonof-de-frango-simples.jpg",
+      "title": "Strogonoff Cremoso",
+      "author": "Maria da Penha",
+      "ingredients": [
+        "Frango",
+        "Creme de leite",
+        "etc ",
+        "etc2"
+      ],
+      "preparations": [
+        "Frite o frango",
+        "e etc",
+        "e tal"
+      ],
+      "information": "e coma a vontade!"
+    },
+    {
+      "id": "4",
+      "image_url": "https://dicasdovarella.com.br/admin/uploads/3115d4ed-7461-4875-8810-7ea45480af73-desktop.jpg",
+      "title": "Strogonoff Cremosinho",
+      "author": "Maria da Penha",
+      "ingredients": [
+        "Frango"
+      ],
+      "preparations": [
+        "Frite o frango"
+      ],
+      "information": "e coma a vontade!"
+    }
+  ]
 }

@@ -238,3 +238,22 @@
     .recipeForm {
         margin-top: 20px;
     }
+    /* admin Cards*/
+    
+    .admin-cards {
+        margin-top: 20px;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .admin-card {
+        max-width: 150px;
+    }
+    
+    .recipe-presentation img {
+        max-width: 400px;
+        ;
+    }
+    
+    #edit-image {
+        width: 300px;
+    }
