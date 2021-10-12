@@ -2,58 +2,39 @@
 
 
 {%block content%}
-
-    <a class="button" href="/recipes/{{recipe.id}}/edit">Editar</a>
-    <h3>Receita: {{recipe.title}}</h3>
-    <div class="recipe-details">
-
-        <div class="recipe-presentation">
-            <img id="image" src="{{recipe.image_url}}" alt="imagem de {{recipe.title}}">
-            <h1>{{recipe.title}}</h1>
-            <p>{{recipe.author}}</p>
+    
+    <div class="recipe">
+        <div class="recipe-settings">
+            <h3>Receita: {{recipe.title}}</h2>
+            <a href="/recipes/{{recipe.id}}/edit">Editar</a>
         </div>
-    </div>
+        <div class="recipe-image" style="background-image: url({{recipe.image_url}});"></div>
+        <h1>{{recipe.title}}</h1>
+        <p>{{recipe.author}}</p>
 
-    <div class="container">
-        
-        <div class="recipe__ingredients">
-            <h2>
-                Ingredientes<button class="button">MOSTRAR</button>
-            </h2>
-            <div class="recipe__info hide">
-                <ul>
-                        {% for ingredient in recipe.ingredients %}
-                            <li>{{ ingredient }}</li>     
-                        {% endfor %}
-                    
-                </ul>
-            </div>
-        </div>
-        <div class="recipe__preparation">
-            <h2>
-                Modo de preparo<button class="button">MOSTRAR</button>
-            </h2>
-            <div class="recipe__info hide">
+        <div class="recipe-details">
+            <div class="item">
+                <h2>Ingredientes</h2>
                 <ol>
-                        {% for prep in recipe.preparations %}
-                            <li>{{ prep }}</li>
-                        {% endfor %}
-                    
+                    {% for item in recipe.ingredients %}
+                    <li>{{item}}</li>
+                    {% endfor %}
                 </ol>
             </div>
-        </div>
-        <div class="recipe__add">
-            <h2>
-                Informações adicionais<button class="button">Mostrar</button>
-            </h2>
-            <div class="recipe__info hide">
-                <p>{{ recipe.information }}</p>
+            <div class="item">
+                <h2>Modo de preparo</h2>
+                <ol>
+                    {% for item in recipe.preparations %}
+                    <li>{{item}}</li>
+                    {% endfor %}
+                </ol>
+            </div>
+            <div class="item">
+                <h2>Informações adicionais</h2>
+                <p>{{recipe.information}}</p>
             </div>
         </div>
-
     </div>
-
-
 
 
 

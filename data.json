@@ -1,19 +1,15 @@
 {
   "recipes": [
     {
-      "id": 1,
+      "id": "1",
       "image_url": "https://conteudo.imguol.com.br/c/entretenimento/0e/2017/10/15/batata-crua-1508077604971_v2_1920x1269.jpg",
-      "title": "Barbara Chips",
+      "title": "Barbara Chipsss!!",
       "author": "Barbara",
       "ingredients": [
-        "Batata",
-        "Ovo",
-        "Sal"
+        "Batata,Ovo,Sal"
       ],
       "preparations": [
-        "Eetjioef",
-        "dsfsdfgsd",
-        "dsfsd"
+        "Eetjioef,dsfsdfgsd,dsfsd"
       ],
       "information": "eh so isso"
     },
@@ -66,6 +62,19 @@
         "Frite o frango"
       ],
       "information": "e coma a vontade!"
+    },
+    {
+      "id": "5",
+      "image_url": "https://d1uz88p17r663j.cloudfront.net/resized/5e8088611ce8f8b0ff8007950b027cc1_pudim-de-leite-moca-receitas-nestle_1200_600.jpg",
+      "title": "Pudinzinho",
+      "author": "Laura Penis",
+      "ingredients": [
+        "Leite condensado e outros"
+      ],
+      "preparations": [
+        "Assa no microondas"
+      ],
+      "information": "Tudo de bom"
     }
   ]
 }

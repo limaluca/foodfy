@@ -1,11 +1,13 @@
     @import "https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap";
-    * {
+    *{
         margin: 0;
         border: 0;
         padding: 0;
         font-family: 'Roboto', sans-serif;
     }
     
+    
+    /*
     header {
         padding-bottom: 36px;
         padding-top: 10px;
@@ -64,13 +66,21 @@
         top: 66px;
         right: 100px;
     }
-    /* CARDS das receitas */
+     CARDS das receitas 
     
     .cardsTitle {
         margin-top: 50px;
         margin-bottom: 20px;
     }
+    */
     
+    .wrapped{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 32px;
+        flex-direction: column;
+    }
     .cards {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -99,161 +109,40 @@
         font-size: 14px;
         color: #777777;
     }
-    /* Modal Overlay */
     
-    .modalOverlay {
-        background-color: rgba(0, 0, 0, 0.7);
-        opacity: 0;
-        width: 100%;
-        height: 100%;
-        position: fixed;
-        top: 0;
-        left: 0;
-        visibility: hidden;
-    }
-    
-    .modal {
-        max-width: 660px;
-        height: 413px;
-        background: white;
-        margin: 20vh auto;
-        position: relative;
-        border-radius: 16px;
-    }
-    
-    .closeModal {
-        position: absolute;
-        bottom: 30px;
-        left: 43%;
-        color: #999999;
-        font-size: 16px;
-        cursor: pointer;
-    }
-    /* Modal Overlay Active */
-    
-    .modalOverlay.active {
-        opacity: 1;
-        visibility: visible;
-    }
-    
-    .modalContent {
+
+    footer, header{
         text-align: center;
-        line-height: 28px;
     }
-    
-    .modalImage {
-        padding: 30px 30px 20px 30px;
-    }
-    
-    .modalContent img {
-        border-radius: 15px;
-        width: 600px;
-        height: 200px;
-        object-fit: cover;
-    }
-    
-    .modalContent h4 {
-        font-size: 24px;
-        color: #111111;
-    }
-    
-    .modalContent p {
-        font-size: 18px;
-        color: #777777;
-    }
-    
-    .titles {
-        font-family: Roboto-Bold, sans-serif;
-        font-size: 10px;
-        color: #111111;
-        margin-bottom: 20px;
-    }
-    
-    .paragraphs {
-        font-family: Roboto-Regular, sans-serif;
-        font-size: 18px;
-        color: #444444;
-        line-height: 28px;
-        padding-bottom: 30px;
-        width: 940px;
-    }
-    
-    .wrapped {
-        margin-left: 25vh;
-    }
-    
-    footer {
-        background-color: #EEEEEE;
-        width: 100%;
-        height: 62px;
-        bottom: 0;
-    }
-    
-    footer p {
-        margin-top: 23px;
-        text-align: center;
-        color: #999999;
-    }
-    
-    .recipe__detail h2 {
-        margin-top: 50px;
-        margin-bottom: 20px;
-        font-size: 24px;
-        color: #111;
-    }
-    
-    .recipe__ingredients,
-    .recipe__preparation,
-    .recipe__info {
-        font-size: 18px;
-        color: #444;
-        line-height: 28px;
-    }
-    
-    .hide {
-        display: none;
-    }
-    
-    li,
-    ol {
-        list-style-position: inside;
-    }
-    
-    .button {
-        padding-left: 8px;
-        background: transparent;
-        font-family: 'Roboto', sans-serif;
-        font-size: 12px;
+
+    header nav a {
+        text-decoration: none;
         font-weight: bold;
-        border: none;
-        color: #999999;
-        text-transform: uppercase;
+        color: black;
+        padding: 8px 16px;
+        margin-top: 4px;
+        display: inline-block;
     }
-    
-    .button:hover {
-        cursor: pointer;
+    .recipe{
+        background-color: rgb(160, 138, 138);
+        width: 95vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
     }
-    /* FORM */
-    
-    .recipeForm {
-        margin-top: 20px;
+    .recipe-image{
+        height: 280px;
+        width: 100%;
+        background-position: center;
+        background-size: cover;
     }
-    /* admin Cards*/
-    
-    .admin-cards {
-        margin-top: 20px;
-        grid-template-columns: 1fr 1fr;
-    }
-    
-    .admin-card {
-        max-width: 150px;
-    }
-    
-    .recipe-presentation img {
-        max-width: 400px;
-        ;
-    }
-    
-    #edit-image {
-        width: 300px;
-    }
+
+     .recipe-settings{
+         width: 100%;
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+     }
+
+

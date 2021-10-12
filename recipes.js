@@ -3,11 +3,11 @@ const data = require('./data.json');
 
 exports.index = function(request, response) {
 
-    return response.render("index", { items: data.recipes })
+    return response.render("recipes/index", { items: data.recipes })
 }
 
 exports.about = function(request, response) {
-    return response.render("about")
+    return response.render("recipes/about")
 }
 
 exports.create = function(request, response) {
@@ -77,10 +77,8 @@ exports.show = function(request, response) {
 
     const recipe = {
         //spread operator (everything else on the recipe)
-        ...foundRecipe,
-        ingredients: String(foundRecipe.ingredients).split(","),
-        preparation: String(foundRecipe.preparation).split(".,")
-    }
+        ...foundRecipe
+        }
 
     return response.render("recipes/show", { recipe })
 }

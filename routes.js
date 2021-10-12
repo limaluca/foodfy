@@ -6,7 +6,7 @@ const recipes = require("./recipes")
 
 routes.get("/", recipes.index)
 
-routes.get("/index", recipes.index)
+routes.get("/recipes", recipes.index)
 
 routes.get("/about", recipes.about)
 
